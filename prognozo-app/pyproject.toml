@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "prognozo-app"
+version = "0.1.0"
+description = "A Flask- & Poetry-based Python weather app with distinctive features."
+authors = ["Кирилл Кувшинов <k.koovshinov@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = "^3.1.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+isort = "^5.13.2"
+flake8 = "^7.1.1"
+flake8-isort = "^6.1.1"
+mypy = "^1.13.0"
+ruff = "^0.8.1"
+
+
+[tool.black]
+line-length = 79
+
+[tool.isort]
+profile = "black"
+# known_django="django"
+known_first_party = "prognozo_app"
+no_lines_before = "LOCALFOLDER"
+sections="FUTURE,STDLIB,THIRDPARTY,FIRSTPARTY,LOCALFOLDER"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
