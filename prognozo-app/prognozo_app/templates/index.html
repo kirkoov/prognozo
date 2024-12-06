@@ -2,9 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+    <h1>Welcome to MyApp</h1>
+    <ul>
+        {% for item in items %}
+<!--        <li><a href="{{ url_for('item', item_id=loop.index) }}">{{ item }}</a></li>-->
+        {% endfor %}
 
+        {% for data in loc_data %}
+        <li>{{ data }}: {{ loc_data[data] }}</li>
+        {% endfor %}
+
+    </ul>
 </body>
 </html>
