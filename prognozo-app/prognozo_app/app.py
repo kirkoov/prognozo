@@ -16,16 +16,16 @@ NOMINATIM_QUERY_DAILY_LIMIT = 1000
 NOMINATIM_QUERY_DELAY_SEC = 1
 
 OWP_URL = "https://api.openweathermap.org/data/2.5/weather"
-OWM_KEY = "7a6e967bac122839d69aef8a8ebc1290"
+OWM_KEY = ""
 OWM_QUERY_DAILY_LIMIT = 1000
 OWM_QUERY_DELAY_SEC = 10 * 60
 
 MS_URL = "https://www.meteosource.com/api/v1/free/point"
-MS_KEY = "wxh7mkis3yql84awncklb3kcjtx91dpa32m2z5mj"
+MS_KEY = ""
 MS_QUERY_DAILY_LIMIT = 400
 
 TOMORROW_URL = "https://api.tomorrow.io/v4/weather/realtime"
-TOMORROW_KEY = "PaIgj3qegRij7yCYtZZbwtX5j4VEPDOH"
+TOMORROW_KEY = ""
 
 
 items = ["item1", "item2", "item3"]
